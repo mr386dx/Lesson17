@@ -1,0 +1,42 @@
+{
+    "sku": {
+        "name": "Standard_D2ds_v4",
+        "tier": "GeneralPurpose"
+    },
+    "properties": {
+        "fullyQualifiedDomainName": "mydb386dx.postgres.database.azure.com",
+        "version": "13",
+        "minorVersion": "7",
+        "administratorLogin": "devops_test_postgres",
+        "state": "Ready",
+        "availabilityZone": "2",
+        "storage": {
+            "storageSizeGB": 128
+        },
+        "backup": {
+            "backupRetentionDays": 7,
+            "geoRedundantBackup": "Disabled",
+            "earliestRestoreDate": "2022-08-23T08:50:21.426744+00:00"
+        },
+        "network": {
+            "publicNetworkAccess": "Disabled",
+            "delegatedSubnetResourceId": "/subscriptions/b4161077-c82e-44c9-bbe8-93690059e65f/resourceGroups/devops_test_rg/providers/Microsoft.Network/virtualNetworks/devops_test_rg-vnet/subnets/subnet",
+            "privateDnsZoneArmResourceId": "/subscriptions/b4161077-c82e-44c9-bbe8-93690059e65f/resourceGroups/devops_test_rg/providers/Microsoft.Network/privateDnsZones/mydb386dx.private.postgres.database.azure.com"
+        },
+        "highAvailability": {
+            "mode": "Disabled",
+            "state": "NotEnabled"
+        },
+        "maintenanceWindow": {
+            "customWindow": "Disabled",
+            "dayOfWeek": 0,
+            "startHour": 0,
+            "startMinute": 0
+        }
+    },
+    "location": "West Europe",
+    "tags": {},
+    "id": "/subscriptions/b4161077-c82e-44c9-bbe8-93690059e65f/resourceGroups/devops_test_rg/providers/Microsoft.DBforPostgreSQL/flexibleServers/mydb386dx",
+    "name": "mydb386dx",
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers"
+}
